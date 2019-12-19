@@ -1,0 +1,28 @@
+body {
+    text-align: center;
+    font-family: 'Goudy Bookletter 1911', serif;
+    margin-top: 1%;
+}
+
+.row {
+  display: flex;
+  margin: 2%;
+}
+
+.column {
+  flex: 50%;
+
+}
+
+th {
+	width: 33.3%;
+	border-bottom: 1px solid black;
+}
+
+h1 {
+	margin-bottom: 4.5%;
+}
+
+input {
+	width: 33.3%;
+}

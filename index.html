@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Book List</title>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css?family=Goudy+Bookletter+1911&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+	<div id="container">
+
+	<h1>To Read Book List</h1>
+
+	<div class="row">
+		<div class="column">
+	<form id="input-form">
+		<label for="title">Book title</label><br>
+			<input type="text" name="title" id="title"><br><br>
+		<label for="author">Author</label><br>
+			<input type="text" name="author" id="author"><br><br>
+		<label for="isbn">ISBN</label><br>
+			<input type="number" name="isbn" id="isbn"><br><br>
+		<button type="submit" class="btn btn-success">Submit</button>
+	</form>
+		</div>
+	<br><br>
+
+	<div class="column">
+	<table>
+		<thead>
+			<tr>
+				<th>Title</th>
+				<th>Author</th>
+				<th>ISBN</th>
+				<th></th>
+			</tr>
+		</thead>
+		<tbody id="book-list"></tbody>
+
+	</table>
+	</div>
+
+</div>
+</div>
+
+	<script src="app.js"></script>
+</body>
+</html>
