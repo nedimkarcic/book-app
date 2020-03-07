@@ -15,6 +15,8 @@
 
 	<h1>To Read Book List</h1>
 
+	<!-- Flexbox - formira red (row) i u ovom slučaju dvije kolone(column, 2 diva).-->
+	<!-- U CSS-u obavezno postaviti display: flex i ostalo -->
 	<div class="row">
 		<div class="column">
 	<form id="input-form">
@@ -30,7 +32,8 @@
 	<br><br>
 
 	<div class="column">
-	<table>
+	<table id="table">
+
 		<thead>
 			<tr>
 				<th>Title</th>
@@ -39,7 +42,10 @@
 				<th></th>
 			</tr>
 		</thead>
-		<tbody id="book-list"></tbody>
+
+		<tbody id="book-list">
+			
+		</tbody>
 
 	</table>
 	</div>
@@ -47,6 +53,7 @@
 </div>
 </div>
 
+	<script src="https://kit.fontawesome.com/9478a8e71d.js" crossorigin="anonymous"></script>
 	<script src="app.js"></script>
 </body>
 </html>

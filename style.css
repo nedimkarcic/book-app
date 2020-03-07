@@ -1,12 +1,12 @@
 body {
     text-align: center;
     font-family: 'Goudy Bookletter 1911', serif;
-    margin-top: 1%;
+    margin-top: 2%;
 }
 
 .row {
   display: flex;
-  margin: 2%;
+  margin-right: 5%;
 }
 
 .column {
@@ -25,4 +25,10 @@ h1 {
 
 input {
 	width: 33.3%;
+  height: 35px;
+}
+
+.fas, .fa-trash {
+  color: black;
+
 }
