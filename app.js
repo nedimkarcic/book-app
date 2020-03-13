@@ -1,10 +1,12 @@
 class Book {
-	constructor (form, title, author, isbn){
+	constructor (form, title, author, isbn, newBookAlert){
 		this.form = document.querySelector("#input-form");
 		this.title = document.querySelector("#title");
 		this.author = document.querySelector("#author");
 		this.isbn = document.querySelector("#isbn");
+		this.newBookAlert = document.querySelector(".added-book-alert");
 		this.form.addEventListener('submit', this.bookSubmit);
+		this.form.addEventListener('submit', this.addedBookAlert);
 	};
 
 	// metoda 
@@ -32,7 +34,17 @@ class Book {
 
 	table.appendChild(row);
 
-}
+};
+
+	addedBookAlert = (e) => {
+		e.preventDefault();
+		this.newBookAlert.style.display = 'block';
+		setTimeout(this.clearAlert, 4000);
+	};
+
+	clearAlert = () => {
+		this.newBookAlert.style.display = 'none';
+	};
 
 
 };
