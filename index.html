@@ -13,20 +13,24 @@
 
 	<div id="container">
 
-	<h1>To Read Book List</h1>
+	<h1>VAŠA LISTA KNJIGA ZA ČITANJE</h1>
+
+	<div class="alert alert-success added-book-alert" role="alert">
+  		Nova knjiga je dodana na listu!
+	</div>
 
 	<!-- Flexbox - formira red (row) i u ovom slučaju dvije kolone(column, 2 diva).-->
 	<!-- U CSS-u obavezno postaviti display: flex i ostalo -->
 	<div class="row">
 		<div class="column">
 	<form id="input-form">
-		<label for="title">Book title</label><br>
+		<label for="title">Naslov</label><br>
 			<input type="text" name="title" id="title"><br><br>
-		<label for="author">Author</label><br>
+		<label for="author">Autor</label><br>
 			<input type="text" name="author" id="author"><br><br>
 		<label for="isbn">ISBN</label><br>
 			<input type="number" name="isbn" id="isbn"><br><br>
-		<button type="submit" class="btn btn-success">Submit</button>
+		<button type="submit" class="btn btn-success">Dodaj</button>
 	</form>
 		</div>
 	<br><br>
@@ -36,8 +40,8 @@
 
 		<thead>
 			<tr>
-				<th>Title</th>
-				<th>Author</th>
+				<th>Naslov</th>
+				<th>Autor</th>
 				<th>ISBN</th>
 				<th></th>
 			</tr>
