@@ -14,9 +14,9 @@ class Book {
 	// method for creating a new title in the book list
 	bookSubmit = (e) => {
 
-	e.preventDefault();
+		e.preventDefault();
 
-	if(this.title.value !== '' && this.author.value !== '' && this.isbn.value !== ''){
+		if(this.title.value !== '' && this.author.value !== '' && this.isbn.value !== ''){
 
 		let tdata1 = document.createElement("td");
 		let tdata2 = document.createElement("td");
@@ -35,8 +35,8 @@ class Book {
 		row.appendChild(deleteBook);
 	
 		this.table.appendChild(row);
-	};
-
+		
+		}
 };
 	//method for displaying the green alert when you add a new book in the list
 	addedBookAlert = (e) => {
@@ -47,14 +47,14 @@ class Book {
 
 			this.newBookAlert.style.display = 'block';
 			setTimeout(this.clearAlert, 4000);
-		};
+}
 
 		this.title.value = '';
 		this.author.value = '';
 		this.isbn.value = '';
 	};
 
-	//method for removing the green alert
+	//method for removing the green alert of the new book
 	clearAlert = () => {
 		this.newBookAlert.style.display = 'none';
 	};
@@ -69,7 +69,7 @@ class Book {
 			this.table.removeChild(listItem);
 	}
 	};
+
 };
 
 let book = new Book();
-console.log(title.value);

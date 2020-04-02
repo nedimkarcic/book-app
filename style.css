@@ -2,11 +2,12 @@ body {
     text-align: center;
     font-family: 'Goudy Bookletter 1911', serif;
     margin-top: 2%;
+    background-color: #F8F9FA;
 }
 
 .row {
   display: flex;
-  margin-right: 10%;
+  margin-right: 15%;
 }
 
 .column {
